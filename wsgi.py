@@ -8,9 +8,14 @@
 #application = DjangoWhiteNoise(application)
 
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project.settings")
 
 from django.core.wsgi import get_wsgi_application
 from dj_static import Cling
-
+from whitenoise.django import DjangoWhiteNoise
 application = Cling(get_wsgi_application())
+
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "matsciapp.settings")
+
+application = get_wsgi_application()
+application = DjangoWhiteNoise(application)
