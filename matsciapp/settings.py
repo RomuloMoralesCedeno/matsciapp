@@ -26,7 +26,8 @@ SECRET_KEY = '%(d-7p-c*&98m^l90j&nvmtgqu415(-q1^#8f^pk*9sg9x$9!9'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "matsciapp.herokuapp.com"
+    "matsciapp.herokuapp.com",
+    "127.0.0.1"
     ]
 
 
